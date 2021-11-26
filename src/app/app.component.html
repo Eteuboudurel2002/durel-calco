@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./app.component.css">
+  <title>Calculatrice</title>
+</head>
+<body>
+  <div class="calculatrice">
+    
+    <div class="ecran">{{input}}</div>
+    <div class="touches">
+      <button class="bouton1" (click)='delete()'>DEL</button>
+      <button class="bouton" (click)="ecrire('(')">(</button>
+      <button class="bouton" (click)="ecrire(')')">)</button>
+      <button class="bouton" (click)="ecrire('/')">/</button>
+      <button class="bouton" (click)="ecrire('7')">7</button>
+      <button class="bouton" (click)="ecrire('8')">8</button>
+      <button class="bouton" (click)="ecrire('9')">9</button>
+      <button class="bouton" (click)="ecrire('*')">x</button>
+      <button class="bouton" (click)="ecrire('4')">4</button>
+      <button class="bouton" (click)="ecrire('5')">5</button>
+      <button class="bouton" (click)="ecrire('6')">6</button>
+      <button class="bouton" (click)="ecrire('-')">-</button>
+      <button class="bouton" (click)="ecrire('1')">1</button>
+      <button class="bouton" (click)="ecrire('2')">2</button>
+      <button class="bouton" (click)="ecrire('3')">3</button>
+      <button class="bouton" (click)="ecrire('+')">+</button>
+      <button class="bouton" (click)="ecrire('0')">0</button>
+      <button class="bouton" (click)="ecrire('.')">.</button>
+      <button class="bouton1" (click)="clear()">AC</button>
+      <button class="bouton2" (click)="egal()">=</button>
+    
+    </div>  
+    </div>
+  
+</body>
+</html>
+
+
+
+
+
+<router-outlet></router-outlet>
