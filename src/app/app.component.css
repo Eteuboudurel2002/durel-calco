@@ -22,39 +22,49 @@ body{
 }
 
 
-.ecran{
-    width: 97%;
-    height: 70px;
+#screen{
+    width: 98%;
+    height: 80px;
     background-color:rgb(151, 223, 235);
     margin-bottom: 10px;
     border-radius: 5px;
     display: flex;
-    align-items:flex-end ;
-    justify-content: flex-end;
+    flex-direction: column;
+    align-items:flex-end ; 
+    justify-content: space-between;
     padding: 5px;
-    font-size:  25px;
-}
+    font-size:  30px;
+    font-family: Times ;
 
+}
+#screen:nth-child(2){
+    align-self: flex-end;
+    justify-content: flex-end;
+
+    
+    
+}
 .touches{
     display:grid;
-    grid-template-columns: repeat(4,50px);
-    grid-template-rows: repeat(5,50px); 
-    grid-gap: 6px;
+    grid-template-columns: repeat(4,71px);
+    grid-template-rows: repeat(5,70px); 
+    grid-column-gap: 7px;
+    grid-row-gap: 9px;
 }
 
 button{
     border:none;
-    font-size:18px;
+    font-size:25px;
     font-weight:bold;
     color:#312d2d;
     border-radius: 5px;
     background-color: #f7f7f7;
-    box-shadow: 0 3px #a8a8a8;
+    box-shadow: 0 4px #a8a8a8;
 }
 
 button:active{
     box-shadow: 0 1px #a8a8a8 inset;
-    transform : translateY(2px);
+    transform : translateY(3px);
 }
 
 .bouton1{
